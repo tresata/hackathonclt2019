@@ -362,13 +362,6 @@ You can find the data on local (all machines) in the /srv/data directory. We hav
 
 [National Housing Preservation Database](http://preservationdatabase.org/)
 
-**Economics**
-
-[Consumer Financial Protection Bureau](https://www.consumerfinance.gov/data-research/mortgage-performance-trends/download-the-data/)
-
-[Business Patterns](https://lehd.ces.census.gov/data/j2j_beta.html)
-
-[Tax Parcel with CAMA Data](http://maps.co.mecklenburg.nc.us/openmapping/data.html)
 
 **Education**
 
