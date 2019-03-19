@@ -32,7 +32,7 @@ Table of Content:
 
 ## SLACK
 
-Please make sure you connect with your fellow hackers on [SLACK](https://hackathonclt2018.slack.com/). You can also ask any questions here on any of the available channels. 
+Please make sure you connect with your fellow hackers on [SLACK](https://hackathonclt2019.slack.com/). You can also ask any questions here on any of the available channels. 
 
 ## Getting Started
 
