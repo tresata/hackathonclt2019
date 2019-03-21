@@ -389,6 +389,10 @@ You can find the data on local (all machines) in the /srv/data directory. We hav
 
 [Charlote Metro PD](http://charlottenc.gov/CMPD/Safety/Pages/CrimeStats.aspx)
 
+**Demographics**
+
+[Census](https://factfinder.census.gov/faces/nav/jsf/pages/download_center.xhtml)
+
 ## Social Media 
 You may use social media data in addition to the above datasets.
 
@@ -427,6 +431,3 @@ You may also use Twitter data from various Twitter pages or hashtags.
  
 [@CLTLegAdvocacy](https://twitter.com/CLTLegAdvocacy)
 
-**Demographics**
-
-[Census](https://factfinder.census.gov/faces/nav/jsf/pages/download_center.xhtml)
