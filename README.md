@@ -261,119 +261,130 @@ An Elasticsearch 5 cluster is available at port 9200 on all servers (hack01.nsco
 You can find the data on local (all machines) in the /srv/data directory. We have provided the csv and parquet versions of the pre-downloaded files. 
 
 ```
-├── crime
-│   └── mecklenburg-quality-of-life-survey
-│       ├── csv
-│       └── parq
-├── demographics
-│   ├── census
-│   │   ├── csv
-│   │   └── parq
-│   ├── mecklenburg-public-services-geojson
-│   └── mecklenburg-quality-of-life-survey
-│       ├── csv
-│       └── parq
-├── economics
-│   ├── business-patterns
-│   │   ├── bsv
-│   │   └── parq
-│   ├── consumer-financial-protection-bureau
-│   │   ├── consumer-complaints
-│   │   │   ├── csv
-│   │   │   │   └── consumer-complaints.csv
-│   │   │   └── parq
-│   │   ├── financial-well-being-survey
-│   │   │   └── csv
-│   │   ├── home-mortgage-disclosure-act
-│   │   │   ├── csv
-│   │   │   └── parq
-│   │   └── national-mortgage-rates
-│   │       ├── csv
-│   │       └── parq
-│   └── mecklenburg-quality-of-life-survey
-│       ├── csv
-│       └── parq
-├── education
-│   ├── graduation-counts-including-summer-school
-│   │   ├── csv
-│   │   └── parq
-│   ├── mecklenburg-quality-of-life-survey
-│   │   ├── csv
-│   │   └── parq
-│   ├── nc-student-counts-grade-race-sex
-│   │   ├── csv
-│   │   └── parq
-│   ├── principles-report-nc
-│   │   ├── csv
-│   │   └── parq
-│   └── school-to-geocode-mapping
-│       ├── csv
-│       └── parq
-├── geo-mappings
-│   └── csv
-├── health
-│   ├── clean-air-carolinas
-│   │   ├── csv
-│   │   └── parq
-│   ├── mecklenburg-quality-of-life-survey
-│   │   ├── csv
-│   │   └── parq
-│   └── npa-mosquito-data
-│       ├── bsv
-│       └── parq
-├── housing
-│   ├── charlotte
-│   ├── HUD
-│   │   ├── affh
-│   │   │   ├── mecklenburg
-│   │   │   │   ├── csv
-│   │   │   │   └── parq
-│   │   │   ├── national
-│   │   │   │   └── csv
-│   │   │   └── raw-affh-data
-│   │   └── fair-market-value
-│   │       ├── bsv
-│   │       └── parq
-│   ├── mecklenburg-quality-of-life-survey
-│   │   ├── csv
-│   │   └── parq
-│   └── zillow
-│       ├── csv
-│       └── parq
-└── transportation
-    └── mecklenburg-quality-of-life-survey
-        ├── csv
-        └── parq
+├── health_outcomes
+│   ├── 500-cities
+│   │   ├── csv
+│   │   └── parq
+│   └── aids-vu
+│       ├── csv
+│       └── parq
+├── medlink_partners_services
+│   ├── camino_clinic
+│   │   ├── csv
+│   │   └── parq
+│   ├── charlotte_center_for_legacy_advocacy
+│   │   ├── csv
+│   │   └── parq
+│   ├── charlotte_community_health_clinic
+│   │   ├── csv
+│   │   └── parq
+│   └── nc_medassist
+│       ├── csv
+│       └── parq
+├── social_determinants_of_health
+│   ├── census
+│   │   ├── csv
+│   │   └── parq
+│   ├── charlotte_housing_authority
+│   │   ├── csv
+│   │   ├── parq
+│   │   └── README.txt
+│   ├── consumer_financial_protection_bureau
+│   │   ├── consumer-complaints
+│   │   │   ├── csv
+│   │   │   └── parq
+│   │   ├── financial-well-being-survey
+│   │   │   ├── csv
+│   │   ├── home-mortgage-disclosure-act
+│   │   │   ├── csv
+│   │   │   └── parq
+│   │   └── national-mortgage-rates
+│   │       ├── csv
+│   │       └── parq
+│   ├── epa
+│   │   └── clean-air-carolinas
+│   │       ├── csv
+│   │       └── parq
+│   ├── geo-mappings
+│   │   ├── csv
+│   │   └── parq
+│   ├── housing_urban_development
+│   │   ├── affh
+│   │   │   ├── mecklenburg
+│   │   │   │   ├── csv
+│   │   │   │   └── parq
+│   │   │   ├── national
+│   │   │   │   ├── csv
+│   │   │   │   └── parq
+│   │   │   └── raw-affh-data
+│   │   │       └── csv
+│   │   └── fair-market-value
+│   │       └── parq
+│   ├── mecklenburg_public_services_geojson
+│   │   └── demographics
+│   │       └── mecklenburg-public-services-geojson
+│   ├── mecklenburg_quality_of_life
+│   │   ├── crime
+│   │   │   ├── csv
+│   │   │   ├── data_dictionary
+│   │   │   ├── npa_mapping_geojson
+│   │   │   └── parq
+│   │   ├── demographics
+│   │   │   ├── csv
+│   │   │   ├── data_dictionary
+│   │   │   ├── npa_mapping_geojson
+│   │   │   └── parq
+│   │   ├── economics
+│   │   │   ├── csv
+│   │   │   ├── data_dictionary
+│   │   │   ├── npa_mapping_geojson
+│   │   │   └── parq
+│   │   ├── education
+│   │   │   ├── csv
+│   │   │   ├── data_dictionary
+│   │   │   ├── npa_mapping_geojson
+│   │   │   └── parq
+│   │   ├── health
+│   │   │   ├── csv
+│   │   │   ├── data_dictionary
+│   │   │   ├── npa_mapping_geojson
+│   │   │   └── parq
+│   │   ├── housing
+│   │   │   ├── csv
+│   │   │   ├── data_dictionary
+│   │   │   ├── npa_mapping_geojson
+│   │   │   └── parq
+│   │   └── transportation
+│   │       ├── csv
+│   │       ├── data_dictionary
+│   │       └── parq
+│   ├── nc_board_of_education
+│   │   ├── graduation-counts-including-summer-school
+│   │   │   ├── csv
+│   │   │   └── parq
+│   │   ├── nc-student-counts-grade-race-sex
+│   │   │   ├── csv
+│   │   │   └── parq
+│   │   ├── principles-report-nc
+│   │   │   ├── csv
+│   │   │   └── parq
+│   │   └── school-to-geocode-mapping
+│   │       ├── csv
+│   │       └── parq
+│   └── zillow
+│       ├── csv
+│       └── parq
 ```
 
-## Data Links
+## Helpful Data Links - Social Determinants of Health
 
-**Housing**
-
-[Housing and Urban Development](https://www.hudexchange.info/resource/4868/affh-raw-data/)
-
-[Zillow](https://www.zillow.com/research/data/)
-
-[Mecklenburg Quality of Life](https://mcmap.org/qol/)
+**Census**
 
 [Census](https://factfinder.census.gov/faces/nav/jsf/pages/download_center.xhtml)
 
-[Housing Choice Vouchers](https://egis-hud.opendata.arcgis.com/datasets/8d45c34f7f64433586ef6a448d00ca12_0?geometry=97.375%2C12.813%2C71.887%2C54.725)
-
-[National Housing Preservation Database](http://preservationdatabase.org/)
-
-
-**Education**
-
-[North Carolina School Board](http://www.ncpublicschools.org/fbs/accounting/data/)
-
-[Survey on US Public Schools](https://catalog.data.gov/dataset/2010-school-survey-on-crime-and-safety)
-
-**Transportation**
+**Environmental Protection Agency (EPA)**
 
 [Environmental Protection Agency](https://catalog.data.gov/dataset/walkability-index)
-
-[Mecklenburg Quality of Life](https://mcmap.org/qol/)
 
 **Health**
 
@@ -383,12 +394,24 @@ You can find the data on local (all machines) in the /srv/data directory. We hav
 
 [Medicare Provider Utlization & Payment Data](https://www.cms.gov/Research-Statistics-Data-and-Systems/Statistics-Trends-and-Reports/Medicare-Provider-Charge-Data/Inpatient.html)
 
-**Crime**
+**Housing and Urban Development**
+
+[Housing and Urban Development](https://www.hudexchange.info/resource/4868/affh-raw-data/)
+
+[Housing Choice Vouchers](https://egis-hud.opendata.arcgis.com/datasets/8d45c34f7f64433586ef6a448d00ca12_0?geometry=97.375%2C12.813%2C71.887%2C54.725)
+
+[National Housing Preservation Database](http://preservationdatabase.org/)
+
+**Mecklenburg Quality of Life**
 
 [Mecklenburg Quality of Life](https://mcmap.org/qol/)
 
-[Charlote Metro PD](http://charlottenc.gov/CMPD/Safety/Pages/CrimeStats.aspx)
+**NC Board of Education**
 
-**Demographics**
+[North Carolina School Board](http://www.ncpublicschools.org/fbs/accounting/data/)
 
-[Census](https://factfinder.census.gov/faces/nav/jsf/pages/download_center.xhtml)
+[Survey on US Public Schools](https://catalog.data.gov/dataset/2010-school-survey-on-crime-and-safety)
+
+**Zillow**
+
+[Zillow](https://www.zillow.com/research/data/)
