@@ -40,10 +40,10 @@ You can obtain a username and login information from command central (in the kid
 
 ssh into a server where you can access the data.
 
-    $ ssh <username>@hack02.nscom.com OR
-    $ ssh <username>@hack03.nscom.com OR
-    $ ssh <username>@hack04.nscom.com OR
-    $ ssh <username>@hack05.nscom.com
+    $ ssh <username>@hack02.northstate.net OR
+    $ ssh <username>@hack03.northstate.net OR
+    $ ssh <username>@hack04.northstate.net OR
+    $ ssh <username>@hack05.northstate.net
     
 
 and enter the password you were given.
@@ -139,9 +139,9 @@ If you'd like to create a file from the command line, you can use a create table
 
     hive> create table test row format delimited fields terminated by '|' stored as textfile as select * from housing_qol_housing limit 10;
     
-We are also running hive-server on hack01.nscom.com. You can connect to them with JDBC/ODBC. For example to connect to hack01 with JDBC you would use this connect string:
+We are also running hive-server on hack01.northstate.net. You can connect to them with JDBC/ODBC. For example to connect to hack01 with JDBC you would use this connect string:
 
-    jdbc:hive2://hack01.nscom.com:10000
+    jdbc:hive2://hack01.northstate.net:10000
     
 If you need to provide a username and password, use the username we provided for SSH login and leave the password blank. 
 
@@ -199,8 +199,8 @@ Getting familiar with conda: https://conda.io/projects/conda/en/latest/commands.
 
 An example of how to start anaconda python:
 ```
-ssh hacker001@hack02.nscom.com
-hacker001@hack02.nscom.com's password:
+ssh hacker001@hack02.northstate.net
+hacker001@hack02.northstate.net's password:
 Last login: Fri Mar 23 21:42:20 2018 from 107.14.49.67
 [hacker001@hack02 ~]$ source /usr/local/lib/anaconda/bin/activate
 (base) [hacker001@hack02 ~]$ python
@@ -216,7 +216,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 #### TREK
 Data Inventory Engine built specifically to catalog, profile and report data ontology, quality and format attributes for all data in Hadoop. TREK rapidly profiles and inventories “as-is” data stored in Hadoop across all rows and columns to create an informed view of all valuable enterprise data feeds stored in a single Hadoop cluster.
 
-TREK can be accessed via http://hack01.nscom.com:5603
+TREK can be accessed via http://hack01.northstate.net:5603
 
 For login, it is user "tresata" and password "admin". After loggin in click on the menu icon next to the name "tresata" on the top left corner and select TREK.
 Once you select a dataset in TREK click on partitions and select a partition (typically there is only one). You should now see a summary of all the columns in the dataset. Click on a column to get the statistics for that one column.
@@ -225,7 +225,7 @@ Once you select a dataset in TREK click on partitions and select a partition (ty
 
 This is where you can track jobs that run on the hadoop cluster:
 
-http://hack01.nscom.com:8088/
+http://hack01.northstate.net:8088/
 
 ## PuTTY
 Here is the link to download puTTY for remote access to the data files. This is useful if you have a Windows computer. The download link is:
@@ -236,22 +236,22 @@ https://www.putty.org/
 
 You can also use Samba to connect to the servers and download the data locally. The samba share is:
 
-    smb://hack01.nscom.com/data
+    smb://hack01.northstate.net/data
 
 on windows this is:
 
-    \\hack01.nscom.com\data
+    \\hack01.northstate.net\data
 
 Instructions for how to use Samba for apple devices can be found [here](https://support.apple.com/en-us/HT204445). Help for connecting to a Samba share on a windows device can be found [here](https://www.techrepublic.com/article/how-to-connect-to-linux-samba-shares-from-windows-10/). 
 
 ## FTP
 
 The data is also accessible via FTP on hack01.nscom.com. In a web browser:
-    ftp://hack01.nscom.com/hackathon
+    ftp://hack01.northstate.net/hackathon
 
 ## Elasticsearch
 
-An Elasticsearch 5 cluster is available at port 9200 on all servers (hack01.nscom, hack02.nscom, hack03.nscom, hack04.nscom.com, hack05.nscom.com). There is no security enabled so you can create indices if you need to, but please **do not delete or modify other peoples indices**. 
+An Elasticsearch 5 cluster is available at port 9200 on all servers (hack01.northstate.net, hack02.northstate.net, hack03.northstate.net, hack04.northstate.net, hack05.northstate.net). There is no security enabled so you can create indices if you need to, but please **do not delete or modify other peoples indices**. 
 
 ## Data
 
