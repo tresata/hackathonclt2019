@@ -246,7 +246,7 @@ Instructions for how to use Samba for apple devices can be found [here](https://
 
 ## FTP
 
-The data is also accessible via FTP on hack01.nscom.com. In a web browser:
+The data is also accessible via FTP on hack01.northstate.net. In a web browser:
     ftp://hack01.northstate.net/hackathon
 
 ## Elasticsearch
@@ -388,6 +388,44 @@ You can find the data on local (all machines) in the /srv/data directory. We hav
 [Mecklenburg Quality of Life](https://mcmap.org/qol/)
 
 [Charlote Metro PD](http://charlottenc.gov/CMPD/Safety/Pages/CrimeStats.aspx)
+
+## Social Media 
+You may use social media data in addition to the above datasets.
+
+**Google Trends**
+
+Google Trends may be used to check for popular search terms and related queries or keywords. This is a fantastic tool to check interest in keywords by checking relative popularity of a query's search     volume over time.
+
+[Google Trends](https://trends.google.com/trends/?geo=US)
+
+You may use more than one search term to find comparison stats for keywords, interest by region, subregion, country, metro area, or city for a range of time periods. Additionally, you may use the rela    ted searches, related queries, top questions on keyword, latest stories and insights, interactive map features. Data may be exported locally for your use.
+
+```
+Some useful facts & tips when using Google Trends data:
+ 
+* Use "related queries" to find new keyword ideas and expand your data search
+* Trends eliminates repeated searches from the same person over a short period of time to give you a better picture of the search. It only shows data for popular terms, and low volumes appear as 0.
+* Google Trends shows relative popularity of a search query instead of absolute search volume data to make comparisons between terms easier. This means that each data point is divided by the total sea    rches of the geography and the time range that it represents, so be careful when comparing very small cities or regions to much larger geographic areas.
+* Top searches are terms that are most frequently searched with the term you entered in the same search session, within the chosen category, country, or region.
+* Rising searches are terms that were searched for with the keyword you entered (or overall searches, if no keyword was entered), which had the most significant growth in volume in the requested time     period.
+* For each rising search term, you see a percentage of the term’s growth compared to the previous time period. If you see “Breakout” instead of a percentage, it means that the search term grew by more     than 5000%.
+* Identify seasonal trends (for example, a spike in popularity for "flu shots" during flu season) to correctly understand your trend graphs
+* Use the maps to exactly which cities and subregions best help answer your question
+
+```
+**Twitter**
+
+You may also use Twitter data from various Twitter pages or hashtags.
+
+[@GoogleTrends](https://twitter.com/GoogleTrends?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor)
+
+[@medlinkteam](https://twitter.com/medlinkteam)
+ 
+[@MedLinkMeck](https://twitter.com/medlinkmeck?lang=en)
+ 
+[@GetCoveredMeck](https://twitter.com/GetCoveredMeck)
+ 
+[@CLTLegAdvocacy](https://twitter.com/CLTLegAdvocacy)
 
 **Demographics**
 
