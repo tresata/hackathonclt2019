@@ -405,7 +405,7 @@ Google Trends may be used to check for popular search terms and related queries 
 You may use more than one search term to find comparison stats for keywords, interest by region, subregion, country, metro area, or city for a range of time periods. Additionally, you may use the rela    ted searches, related queries, top questions on keyword, latest stories and insights, interactive map features. Data may be exported locally for your use.
 
 ```
-Some useful facts & tips when using Google Trends data:
+Some useful tips when using Google Trends data:
  
 * Use "related queries" to find new keyword ideas and expand your data search
 * Trends eliminates repeated searches from the same person over a short period of time to give you a better picture of the search. It only shows data for popular terms, and low volumes appear as 0.
