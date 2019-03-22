@@ -287,7 +287,8 @@ The same files are also copied to each server in the **/srv/data/** directory. T
 │   │   │   │   ├── csv
 │   │   │   │   └── parq
 │   │   │   └── raw-affh-data
-│   │   │       └── csv
+│   │   │       ├── csv
+│   │   │       └── parq
 │   │   └── fair-market-value
 │   │       └── parq
 │   ├── mecklenburg_public_services_geojson
