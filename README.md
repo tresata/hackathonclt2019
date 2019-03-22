@@ -3,7 +3,7 @@ Hackathon 2019
 
 Welcome to hackathonCLT 2019!
 
-Download the kickoff deck for more information on the business problem, the hackathonCLT agenda, the data, and more! Find it in the data folder: [HackathonCLT 2018 kickoff deck](https://github.com/tresata/hackathonclt2018/blob/master/data/hackathonCLT%20MMXVIII%20-%20KICK%20OFF%20.pdf)
+Download the kickoff deck for more information on the business problem, the hackathonCLT agenda, the data, and more! Find it in the data folder: [HackathonCLT 2019 kickoff deck](https://github.com/tresata/hackathonclt2019/blob/master/data/hackathonCLT%20MMXIX%20-%20KICK%20OFF%20.pdf)
 
 Table of Content: 
 
@@ -345,7 +345,9 @@ The same files are also copied to the server in the **/data/hackathon/** directo
 │       └── parq
 ```
 
-## Helpful Data Links - Social Determinants of Health
+## Helpful Data Links
+
+Here are the sources of datasets under Social Determinant of Health
 
 **Census**
 
