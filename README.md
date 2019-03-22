@@ -88,9 +88,7 @@ or
 
     $ hadoop fs -ls /user/username
 
-**HDFS**
-
-You can find the pre-downloaded data on HDFS in the /data/hackathon folder:
+You can find the data on HDFS in the /data/hackathon folder:
 
     /data/hackathon/health_outcomes
     /data/hackathon/medlink_partners_services
