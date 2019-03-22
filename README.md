@@ -8,11 +8,11 @@ Download the kickoff deck for more information on the business problem, the hack
 Table of Content: 
 
 * [IMPORTANT INFORMATION](#important-information)
+* [DEVPOST](#devpost)
 * [SLACK](#slack)
 * [Getting Started](#getting-started)
 * [Machines](#machines)
 * [HDFS](#hdfs)
-* [Hive](#hive)
 * [Spark](#spark)
 * [pySpark](#pyspark)
 * [Anaconda Python](#anaconda-python)
@@ -22,13 +22,18 @@ Table of Content:
 * [SAMBA](#samba)
 * [FTP](#ftp)
 * [Elasticsearch](#elasticsearch)
+* [Data Dictionary](#data-dictionary)
 * [Data](#data)
-* [Data Links](#data-links)
+* [Helpful Data Links](#helpful-data-links)
 
 ## IMPORTANT INFORMATION
 
 * Please make sure you spread out on all the boxes. There are 4 servers available for login, make sure you spreadout and not all login to 1 box. 
 * Use tmux once you login into the server. If not, your session could get terminated and you can lose your work. Just type "tmux" once you login. To re-attach a tmux session "tmux attach". https://tmux.github.io/
+
+## DEVPOST
+
+Please make sure you sign up on [DEVPOST](https://hackathonclt.devpost.com/) to submit your codes and presentations prior to your scheduled shortlisting. This is required for judging!
 
 ## SLACK
 
@@ -85,78 +90,23 @@ or
 
 You can find the pre-downloaded data on HDFS in the /data/hackathon folder:
 
-    /data/hackathon/housing
-    /data/hackathon/education
-    /data/hackathon/economics
-    /data/hackathon/health
-    /data/hackathon/transporation
-    /data/hackathon/demographics
-    /data/hackathon/crime
+    /data/hackathon/health_outcomes
+    /data/hackathon/medlink_partners_services
+    /data/hackathon/social_determinants_of_health
 
-## Hive
-
-Give Hive a whirl and run a sample query:
-
-    $ hive
-
-Try pasting the following query into the hive command-line interface:
-
-    hive> show tables;
-    OK
-  
-    economics_county_cb1500a11_business_patterns
-    economics_qol_economy
-    economics_zip_by_business_class_cb1500cz21_business_patterns
-    economics_zip_cb1500cz11_business_patterns
-    education_edge_geocode_postsecsch_nc_1516
-    education_edge_geocode_publicsch_nc_1516
-    education_qol_education
-    health_coulwood_a_primary_01_01_2017_02_28_2018
-    health_coulwood_a_secondary_01_01_2017_02_28_2018
-    health_coulwood_b_primary_01_01_2017_02_28_2018
-    health_coulwood_b_secondary_01_01_2017_02_28_2018
-    health_matthews_a_primary_01_01_2017_02_28_2018
-    health_matthews_a_secondary_01_01_2017_02_28_2018
-    health_matthews_b_primary_01_01_2017_02_28_2018
-    health_matthews_b_secondary_01_01_2017_02_28_2018
-    health_mceniry_a_primary_01_01_2017_02_28_2018
-    health_mceniry_a_secondary_01_01_2017_02_28_2018
-    health_mceniry_b_primary_01_01_2017_02_28_2018
-    health_mceniry_b_secondary_01_01_2017_02_28_2018
-    health_mosquito_data_dictionary
-    health_myers_park_a_primary_01_01_2017_02_28_2018
-    health_myers_park_a_secondary_01_01_2017_02_28_2018
-    health_myers_park_b_primary_01_01_2017_02_28_2018
-    health_myers_park_b_secondary_01_01_2017_02_28_2018
-    housing_qol_housing
-    
-    hive> set hive.cli.print.header=true;
-    hive> select * from housting_qol_housing limit 10;
-
-This will return all the fields for the first ten items in the active_match_details_new table.
-
-If you'd like to create a file from the command line, you can use a create table command:
-
-    hive> create table test row format delimited fields terminated by '|' stored as textfile as select * from housing_qol_housing limit 10;
-    
-We are also running hive-server on hack01.northstate.net. You can connect to them with JDBC/ODBC. For example to connect to hack01 with JDBC you would use this connect string:
-
-    jdbc:hive2://hack01.northstate.net:10000
-    
-If you need to provide a username and password, use the username we provided for SSH login and leave the password blank. 
 
 ## Spark
 
-**Spark-shell** can be found at /usr/local/lib/spark/bin
+**Spark-shell** can be found at /opt/tresata/spark-2.4.1-tres-alpha1-provided/bin
 
 Now give the Spark-shell a test:
 
-    $ /usr/local/lib/spark/bin/spark-shell --executor-cores 1 --executor-memory 1G
+    $ /opt/tresata/spark-2.4.1-tres-alpha1-provided/bin/spark-shell --executor-cores 1 --executor-memory 1G
 
 
 Read in the data and run a simple query that calcuates the unique count of ChildZip:
 
-    val df = spark.sqlContext.read.parquet("/data/hackathon/education/mecklenburg-quality-of-life-survey/csv/qol-education.csv")
+    val df = spark.sqlContext.read.parquet("/data/hackathon/social_determinants_of_health/mecklenburg_quality_of_life/education/parq/qol-education.parq")
     df.groupBy("NPA").count().collect()
 
 
@@ -169,16 +119,16 @@ Keep in mind that a spark-shell takes up these resources on the cluster even whe
 
 ## pySpark
 
-**pySpark** can be found at /usr/local/lib/spark/bin
+**pySpark** can be found at /opt/tresata/spark-2.4.1-tres-alpha1-provided/bin
 
 
 You can also do the same query using a python version of the Spark shell.
 
-    $ /usr/local/lib/spark/bin/pyspark --executor-cores 1 --executor-memory 1G
+    $ /opt/tresata/spark-2.4.1-tres-alpha1-provided/bin/pyspark --executor-cores 1 --executor-memory 1G
 
 Read in the data and run a simple query that calcuates the unique count of ChildZip:
 
-    df = sqlContext.read.parquet("data/hackathon/education/mecklenburg-quality-of-life-survey/csv/qol-education.csv")
+    df = sqlContext.read.parquet("/data/hackathon/social_determinants_of_health/mecklenburg_quality_of_life/education/parq/qol-education.parq")
     df.groupBy("NPA").count().collect()
 
 Note that for your "production" run on the dataset you might want to increase resources used on the cluster:
@@ -219,7 +169,7 @@ Data Inventory Engine built specifically to catalog, profile and report data ont
 TREK can be accessed via http://hack01.northstate.net:5603
 
 For login, it is user "tresata" and password "admin". After loggin in click on the menu icon next to the name "tresata" on the top left corner and select TREK.
-Once you select a dataset in TREK click on partitions and select a partition (typically there is only one). You should now see a summary of all the columns in the dataset. Click on a column to get the statistics for that one column.
+Once you select a dataset in TREK click on partitions and select a partition (typically there is only one). You should now see a summary of all the columns in the dataset. Click on a column to get the statistics for that one column. Keep in mind that we have only TREK'ed a sample table for each data source.
 
 ## YARN Resource Manager
 
@@ -253,12 +203,18 @@ The data is also accessible via FTP on hack01.northstate.net. In a web browser:
 
 An Elasticsearch 5 cluster is available at port 9200 on all servers (hack01.northstate.net, hack02.northstate.net, hack03.northstate.net, hack04.northstate.net, hack05.northstate.net). There is no security enabled so you can create indices if you need to, but please **do not delete or modify other peoples indices**. 
 
+## Data Dictionary
+
+The descriptions of the data can be found [here](https://github.com/tresata/hackathonclt2019/tree/master/datadictionary). For any further questions please use the DATA slack channel.
+
 ## Data
 
-**Data Dictionary** : The links to the public source data & the corresponding data dictionaries can be found in the next section. Additionally, descriptions of the pre-downloaded files (already stored locally and on HDFS) can be found [here](https://github.com/tresata/hackathonclt2018/tree/master/datadictionary) For any further questions please use the DATA slack channel.
+**HDFS**
+You can find the data on HDFS in the /data/hackathon/ directory. We have provided the csv/bsv and parquet versions of the files. Please see the directory structure below.
+bsv: bar ("|") delimited
 
 **LOCAL**
-You can find the data on local (all machines) in the /srv/data directory. We have provided the csv and parquet versions of the pre-downloaded files. 
+The same files are also copied to the server in the /data/hackathon/ directory. The same structure follows, except parquet files are removed on the server.
 
 ```
 ├── health_outcomes
@@ -272,10 +228,23 @@ You can find the data on local (all machines) in the /srv/data directory. We hav
 │   ├── camino_clinic
 │   │   ├── csv
 │   │   └── parq
-│   ├── charlotte_center_for_legal_advocacy
+│   ├── care_ring
+│   │   ├── client_encounters
+│   │   │   ├── csv
+│   │   │   └── parq
+│   │   ├── nurse_family_partnership
+│   │   │   ├── csv
+│   │   │   └── parq
+│   │   └── physicians_reachout
+│   │       ├── csv
+│   │       └── parq
+│   ├── charlotte_center_for_legal_advocacy   
 │   │   ├── csv
 │   │   └── parq
 │   ├── charlotte_community_health_clinic
+│   │   ├── csv
+│   │   └── parq
+│   ├── meck_county_public_health_department  
 │   │   ├── csv
 │   │   └── parq
 │   └── nc_medassist
@@ -417,7 +386,7 @@ You can find the data on local (all machines) in the /srv/data directory. We hav
 [Zillow](https://www.zillow.com/research/data/)
 
 ## Social Media 
-You may use social media data in addition to the above datasets.
+You may use social media data in addition to the datasets above.
 
 **Google Trends**
 
