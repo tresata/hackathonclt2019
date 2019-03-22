@@ -73,6 +73,7 @@ The /home directory on every machine is limited to 170G, and shared between ever
     /data/6/work
 
 Do not work inside these directories directly, but instead create a subdirectory. For example:
+
     mkdir /data/3/work/hacker123
     # in case you want privacy
     chmod og-rwx /data/3/work/hacker123
