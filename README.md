@@ -34,7 +34,7 @@ Table of Content:
 
 ## DEVPOST
 
-Please make sure you sign up on [DEVPOST](https://hackathonclt.devpost.com/) to submit your codes and presentations prior to your scheduled shortlisting. This is required for judging!
+Please make sure you sign up on [DEVPOST](https://hackathonclt.devpost.com/) to submit your codes and presentations prior to your scheduled shortlisting (no later than 8:45 AM). One DEVPOST submission per team. This is required for judging!
 
 ## SLACK
 
