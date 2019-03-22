@@ -3,7 +3,7 @@ Hackathon 2019
 
 Welcome to hackathonCLT 2019!
 
-Download the kickoff deck for more information on the business problem, the hackathonCLT agenda, the data, and more! Find it in the data folder: [HackathonCLT 2019 kickoff deck](https://github.com/tresata/hackathonclt2019/blob/master/data/hackathonCLT%20MMXIX%20-%20KICK%20OFF%20.pdf)
+Download the kickoff deck for more information on the business problem, the hackathonCLT agenda, the data, and more! Find it in the data folder: [HackathonCLT 2019 kickoff deck](https://github.com/tresata/hackathonclt2019/blob/master/hackathonCLT%20MMXIX%20-%20Hacker%20KUNG%20FU%20FIGHTING.pdf)
 
 Table of Content: 
 
