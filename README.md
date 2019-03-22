@@ -210,8 +210,8 @@ An Elasticsearch 5 cluster is available at port 9200 on all servers (hack01.nort
 
 **HDFS**
 You can find the data on HDFS in the **/data/hackathon/** directory. We have provided the csv/bsv and parquet versions of the files. Please see the directory structure below.
-bsv: bar ("|") delimited
-csv: comma (",") delimited
+bsv: bar ("|") delimited.
+csv: comma (",") delimited.
 
 **LOCAL**
 The same files are also copied to the server in the **/data/hackathon/** directory. The same structure follows, except parquet files are removed on the server.
