@@ -151,13 +151,13 @@ An example of how to start anaconda python:
 ```
 ssh hacker001@hack02.northstate.net
 hacker001@hack02.northstate.net's password:
-Last login: Fri Mar 23 21:42:20 2018 from 107.14.49.67
+Last login: Fri Mar 22 10:06:35 2019 from rrcs-24-172-30-38.midsouth.biz.rr.com
 [hacker001@hack02 ~]$ source /usr/local/lib/anaconda/bin/activate
 (base) [hacker001@hack02 ~]$ python
-Python 3.6.4 |Anaconda, Inc.| (default, Jan 16 2018, 18:10:19)
-[GCC 7.2.0] on linux
+Python 2.7.15 |Anaconda, Inc.| (default, Dec 14 2018, 19:04:19) 
+[GCC 7.3.0] on linux2
 Type "help", "copyright", "credits" or "license" for more information.
->>> 
+>>>
 ```
 
 
@@ -214,7 +214,7 @@ bsv: bar ("|") delimited.
 csv: comma (",") delimited.
 
 **LOCAL**
-The same files are also copied to the server in the **/data/hackathon/** directory. The same structure follows, except parquet files are removed on the server.
+The same files are also copied to each server in the **/srv/data/** directory. The same structure follows, except parquet files are removed on each server.
 
 ```
 ├── health_outcomes
