@@ -201,7 +201,7 @@ The data is also accessible via FTP on hack01.northstate.net. In a web browser:
 
 ## Elasticsearch
 
-An Elasticsearch 5 cluster is available at port 9200 on all servers (hack01.northstate.net, hack02.northstate.net, hack03.northstate.net, hack04.northstate.net, hack05.northstate.net). There is no security enabled so you can create indices if you need to, but please **do not delete or modify other peoples indices**. 
+An Elasticsearch 5 cluster is available at port 9200 on all servers (hack01.northstate.net, hack02.northstate.net, hack03.northstate.net, hack04.northstate.net, hack05.northstate.net). There is no security enabled so you can create indices if you need to, but please **do not delete or modify other peoples' indices**. 
 
 ## Data Dictionary
 
@@ -210,11 +210,11 @@ The descriptions of the data can be found [here](https://github.com/tresata/hack
 ## Data
 
 **HDFS**
-You can find the data on HDFS in the /data/hackathon/ directory. We have provided the csv/bsv and parquet versions of the files. Please see the directory structure below.
+You can find the data on HDFS in the **/data/hackathon/** directory. We have provided the csv/bsv and parquet versions of the files. Please see the directory structure below.
 bsv: bar ("|") delimited
 
 **LOCAL**
-The same files are also copied to the server in the /data/hackathon/ directory. The same structure follows, except parquet files are removed on the server.
+The same files are also copied to the server in the **/data/hackathon/** directory. The same structure follows, except parquet files are removed on the server.
 
 ```
 ├── health_outcomes
