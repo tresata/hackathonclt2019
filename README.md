@@ -272,7 +272,7 @@ You can find the data on local (all machines) in the /srv/data directory. We hav
 │   ├── camino_clinic
 │   │   ├── csv
 │   │   └── parq
-│   ├── charlotte_center_for_legacy_advocacy
+│   ├── charlotte_center_for_legal_advocacy
 │   │   ├── csv
 │   │   └── parq
 │   ├── charlotte_community_health_clinic
