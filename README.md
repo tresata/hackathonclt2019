@@ -24,6 +24,7 @@ Table of Content:
 * [Elasticsearch](#elasticsearch)
 * [Data Dictionary](#data-dictionary)
 * [Data](#data)
+* [Descriptions of Data](#descriptions-of-data)
 * [Helpful Data Links](#helpful-data-links)
 
 ## IMPORTANT INFORMATION
@@ -205,8 +206,6 @@ An Elasticsearch 5 cluster is available at port 9200 on all servers (hack01.nort
 
 ## Data Dictionary
 
-The descriptions of the data can be found [here](https://github.com/tresata/hackathonclt2019/tree/master/datadictionary). For any further questions please use the DATA slack channel.
-
 ## Data
 
 **HDFS**
@@ -345,6 +344,10 @@ The same files are also copied to the server in the **/data/hackathon/** directo
 │       ├── csv
 │       └── parq
 ```
+
+## Descriptions of Data
+The descriptions of data in Social Determinants of Health can be found [here](https://github.com/tresata/hackathonclt2019/tree/master/datadictionary). For any further questions please use the DATA slack channel.
+
 
 ## Helpful Data Links
 
