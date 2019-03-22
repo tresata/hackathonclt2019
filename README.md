@@ -28,8 +28,9 @@ Table of Content:
 
 ## IMPORTANT INFORMATION
 
-* Please make sure you spread out on all the boxes. There are 4 servers available for login, make sure you spreadout and not all login to 1 box. 
+* Please make sure you spread out on all the boxes. There are 4 servers available for login, make sure you spreadout and not all log into 1 box. 
 * Use tmux once you login into the server. If not, your session could get terminated and you can lose your work. Just type "tmux" once you login. To re-attach a tmux session "tmux attach". https://tmux.github.io/
+* Screen is an alternative for tmux. https://www.rackaid.com/blog/linux-screen-tutorial-and-how-to/
 
 ## DEVPOST
 
