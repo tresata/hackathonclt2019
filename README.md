@@ -212,6 +212,7 @@ The descriptions of the data can be found [here](https://github.com/tresata/hack
 **HDFS**
 You can find the data on HDFS in the **/data/hackathon/** directory. We have provided the csv/bsv and parquet versions of the files. Please see the directory structure below.
 bsv: bar ("|") delimited
+csv: comma (",") delimited
 
 **LOCAL**
 The same files are also copied to the server in the **/data/hackathon/** directory. The same structure follows, except parquet files are removed on the server.
