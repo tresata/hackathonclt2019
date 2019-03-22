@@ -173,7 +173,7 @@ TREK can be accessed via http://hack01.northstate.net:5603
 For login, it is user **tresata** and password **admin**. After logging in, click on the menu icon next to the name "tresata" on the top right corner and select TREK.
 You will see a list of datasets (please refer to [Data](#data) below) under "Project Name". Once you select a dataset in TREK, click on "Partitions" and select a partition (typically there is only one). You should now see a summary of all the columns in the dataset. Click on a column to get the statistics for that column. Keep in mind that we have only TREK'ed a sample table for each data source.
 
-**Please DO NOT delete dataset in  TREK since all teams share the same TREK instance.**
+**Please DO NOT delete any dataset in  TREK since all teams share the same TREK instance.**
 
 ## YARN Resource Manager
 
