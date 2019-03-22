@@ -42,9 +42,13 @@ Please make sure you connect with your fellow hackers on [SLACK](https://hackath
 
 ## Getting Started
 
+#### Server & Login
+
 You can obtain a username and login information from command central (in the kids university downstairs).
 
-ssh into a server where you can access the data.
+There are 4 servers available.
+
+ssh into a server where you can access the data:
 
     $ ssh <username>@hack02.northstate.net OR
     $ ssh <username>@hack03.northstate.net OR
