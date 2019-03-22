@@ -389,11 +389,11 @@ Here are the sources of datasets under Social Determinant of Health
 [Zillow](https://www.zillow.com/research/data/)
 
 ## Social Media 
-You may use social media data in addition to the datasets above.
+You may use social media data in addition to the above datasets.
 
 **Google Trends**
 
-Google Trends may be used to check for popular search terms and related queries or keywords. This is a fantastic tool to check interest in keywords by checking relative popularity of a query's search     volume over time.
+Google Trends may be used to check for popular search terms and related queries or keywords. This is a fantastic tool to check interest in keywords by checking relative popularity of a query's search volume over time.
 
 [Google Trends](https://trends.google.com/trends/?geo=US)
 
@@ -414,7 +414,7 @@ Some useful tips when using Google Trends data:
 ```
 **Twitter**
 
-You may also use Twitter data from various Twitter pages or hashtags.
+You may also use Twitter data from various Twitter pages or hashtags:
 
 [@GoogleTrends](https://twitter.com/GoogleTrends?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor)
 
