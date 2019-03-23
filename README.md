@@ -208,7 +208,7 @@ The data is also accessible via FTP on hack01.northstate.net. In a web browser:
 
 ## Elasticsearch
 
-An Elasticsearch 5 cluster is available at port 9200 on all servers (hack01.northstate.net, hack02.northstate.net, hack03.northstate.net, hack04.northstate.net, hack05.northstate.net). There is no security enabled so you can create indices if you need to, but please **do not delete or modify other peoples' indices**. 
+Elasticsearch (5 node) is available at port 9200 on all servers (hack01.northstate.net, hack02.northstate.net, hack03.northstate.net, hack04.northstate.net, hack05.northstate.net). There is no security enabled so you can create indices if you need to, but please **do not delete or modify other peoples' indices**. 
 
 ## Data Dictionary
 The data dictionary can be found [here](https://github.com/tresata/hackathonclt2019/blob/master/Hackathon%202019%20Data%20Dictionary.xlsx).
